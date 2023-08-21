@@ -44,8 +44,12 @@ struct Menu: View {
                             Rectangle()
                                 .frame(width: 300, height: 60)
                                 .foregroundColor(.blue).cornerRadius(15)
-                                            Text("Explorar").font(.largeTitle)
-                                .foregroundColor(.white)
+                            NavigationLink(destination: Explorar()){
+                                Text("Explorar")
+                                    .font(.largeTitle)
+                                    .foregroundColor(.white)
+                            }
+                                            
                                         }
                                         Spacer()
 
