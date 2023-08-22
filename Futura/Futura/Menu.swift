@@ -40,35 +40,40 @@ struct Menu: View {
                             }
                             Spacer()
                         }
-                        ZStack{
-                            Rectangle()
+                        NavigationLink(destination: Explorar()){
+                            ZStack{
+                                Rectangle()
                                 .frame(width: 300, height: 60)
                                 .foregroundColor(.blue).cornerRadius(15)
-                            NavigationLink(destination: Explorar()){
                                 Text("Explorar")
                                     .font(.largeTitle)
                                     .foregroundColor(.white)
                             }
-                                            
-                                        }
+                        }
                                         Spacer()
 
                                         Rectangle().frame(width: 250, height: 250)
                                         
-                            ZStack{
-                                    Rectangle()
-                                    .frame(width: 300, height: 60)
-                                    .foregroundColor(.blue).cornerRadius(15)
-                                            Text("Destaques")    .font(.largeTitle)
-                                    .foregroundColor(.white)
-                                        }
-                                        
-                            ZStack{
-                                    Rectangle().frame(width: 300, height: 60).foregroundColor(.blue).cornerRadius(15)
-                                            Text("Meus Investimentos").font(.largeTitle).scaleEffect(0.9)
-                                          .foregroundColor(.white)
-                                        }
-                                        
+                        NavigationLink(destination: destaques()){
+                              ZStack{
+                                  Rectangle()
+                                  .frame(width: 300, height: 60)
+                                  .foregroundColor(.blue).cornerRadius(15)
+                                  Text("Destaques")
+                                      .font(.largeTitle)
+                                      .foregroundColor(.white)
+                              }
+                          }
+                        NavigationLink(destination: Investimentos()){
+                              ZStack{
+                                  Rectangle()
+                                  .frame(width: 300, height: 60)
+                                  .foregroundColor(.blue).cornerRadius(15)
+                                  Text("Meus Investimentos")
+                                      .font(.largeTitle)
+                                      .foregroundColor(.white)
+                              }
+                          }
                                         Spacer()
                                     }
                                     
