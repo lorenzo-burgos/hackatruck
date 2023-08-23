@@ -14,6 +14,7 @@ struct Menu: View {
                 VStack{
                     HStack{
                         Text("Futur")
+                            .foregroundColor(Color.white)
                             .font(.largeTitle)
                             .bold() +
                         Text("a")
@@ -28,15 +29,21 @@ struct Menu: View {
                     }
                     HStack {
                         Text("Investimentos")
+                            .foregroundColor(Color.white)
                             .font(.largeTitle)
                             .offset(y:-20)
                         Spacer()
                     }
+                    Rectangle()
+                        .frame(width: 350, height: 1)
+                        .offset(y:-20)
+                        .foregroundColor(Color.white)
                     Spacer()
                     VStack{
                         HStack{
                             NavigationLink(destination: ContentView()){
                                 Text("Log out")
+                                    .foregroundColor(Color.white)
                             }
                             Spacer()
                         }
@@ -52,7 +59,13 @@ struct Menu: View {
                         }
                                         Spacer()
 
-                                        Rectangle().frame(width: 250, height: 250)
+                        ZStack{
+                            Rectangle().frame(width: 250, height: 250)
+                            Text("AD")
+                                .font(.largeTitle)
+                                .bold()
+                                .foregroundColor(.white)
+                        }
                                         
                         NavigationLink(destination: destaques()){
                               ZStack{
@@ -79,6 +92,7 @@ struct Menu: View {
                                     
                                 }
                     }.padding()
+                .background(Color("Gray3"))
             
         }.navigationBarBackButtonHidden(true)
     }

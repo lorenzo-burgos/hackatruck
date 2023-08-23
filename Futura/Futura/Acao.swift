@@ -15,6 +15,7 @@ struct Acao: View {
                     HStack{
                         Text("Futur")
                             .font(.largeTitle)
+                            .foregroundColor(.white)
                             .bold() +
                         Text("a")
                             .bold()
@@ -28,38 +29,48 @@ struct Acao: View {
                     }
                     HStack {
                         Text("Investimentos")
+                            .foregroundColor(.white)
                             .font(.largeTitle)
                             .offset(y:-20)
                         Spacer()
                     }
+                    Rectangle()
+                        .frame(width: 350, height: 1)
+                        .offset(y:-20)
+                        .foregroundColor(Color.white)
                     VStack{
                         HStack{
-                            NavigationLink(destination: Menu()){
+                            NavigationLink(destination: Bolsa()){
                                 Text("Go Back")
+                                    .foregroundColor(.white)
                             }
                             Spacer()
                         }
                         ScrollView{
                             Text("Petr4 Exemplo")
                                 .font(.largeTitle)
+                                .foregroundColor(.white)
                                 .bold()
                             ZStack{
                                 Rectangle()
                                     .frame(width: 300, height: 200)
-                                    .foregroundColor(Color.gray)
+                                    .foregroundColor(Color.white)
                                 Text("Grafico da Acao")
+                                    .font(.largeTitle)
                                     .bold()
                             }
                             Text("Porque Investir")
                                 .font(.largeTitle)
+                                .foregroundColor(.white)
                                 .bold()
                             Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris non efficitur neque, sit amet scelerisque odio. Praesent egestas metus posuere augue dictum, fermentum tristique orci ultricies. Phasellus tempus ligula in urna interdum sollicitudin quis ut libero. Donec ornare est ultrices rhoncus mollis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas dolor eros, efficitur eu risus eget, molestie egestas sem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Morbi purus lectus, porttitor vel sagittis dignissim, laoreet id ipsum. ")
+                                .foregroundColor(.white)
                         }
                         }
                 }
             }
                 .padding()
-        Spacer()
+                .background(Color("Gray3"))
         }.navigationBarBackButtonHidden(true)
     }
 }

@@ -15,6 +15,7 @@ struct Bolsa: View {
                     HStack{
                         Text("Futur")
                             .font(.largeTitle)
+                            .foregroundColor(Color.white)
                             .bold() +
                         Text("a")
                             .bold()
@@ -28,46 +29,69 @@ struct Bolsa: View {
                     }
                     HStack {
                         Text("Investimentos")
+                            .foregroundColor(Color.white)
                             .font(.largeTitle)
                             .offset(y:-20)
                         Spacer()
                     }
+                    Rectangle()
+                        .frame(width: 350, height: 1)
+                        .offset(y:-20)
+                        .foregroundColor(Color.white)
                     VStack{
                         HStack{
                             NavigationLink(destination: Menu()){
                                 Text("Go Back")
+                                    .foregroundColor(Color.white)
                             }
                             Spacer()
                         }
+                        //A Bovespa Exemplo sai para mostrar o nome da bolsa
                         Text("Bovespa Exemplo")
+                            .foregroundColor(Color.white)
                             .font(.largeTitle)
                             .bold()
-                        ZStack{
-                            Rectangle()
-                                .frame(width: 300, height: 200)
-                                .foregroundColor(Color.gray)
-                            Text("Grafico da Bolsa")
-                                .bold()
-                        }
                         ScrollView{
                             NavigationLink(destination: Acao()){
-                                Text("Petr4 Exemplo")
-                                    .font(.largeTitle)
-                                    .bold()
-                                    .foregroundColor(Color.black)
+                                VStack{
+                                    Text("Petr4 Exemplo")
+                                        .font(.largeTitle)
+                                        .bold()
+                                        .foregroundColor(Color.white)
+                                    ZStack{
+                                        Rectangle()
+                                            .frame(width: 300, height: 200)
+                                            .foregroundColor(Color.white)
+                                        Text("Grafico da Bolsa")
+                                            .font(.largeTitle)
+                                            .bold()
+                                            .foregroundColor(Color.black)
+                                    }
+                                }
                             }
                             NavigationLink(destination: Acao()){
-                                Text("Vale4 Exemplo")
-                                    .font(.largeTitle)
-                                    .bold()
-                                    .foregroundColor(Color.black)
+                                VStack{
+                                    Text("Vale4 Exemplo")
+                                        .font(.largeTitle)
+                                        .bold()
+                                        .foregroundColor(Color.white)
+                                    ZStack{
+                                        Rectangle()
+                                            .frame(width: 300, height: 200)
+                                            .foregroundColor(Color.white)
+                                        Text("Grafico da Bolsa")
+                                            .font(.largeTitle)
+                                            .bold()
+                                            .foregroundColor(Color.black)
+                                    }
+                                }
                             }
                         }
                     }
                 }
             }
                 .padding()
-        Spacer()
+                .background(Color("Gray3"))
         }.navigationBarBackButtonHidden(true)
     }
 }

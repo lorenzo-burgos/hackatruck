@@ -14,6 +14,7 @@ struct destaques: View {
                 VStack{
                     HStack{
                         Text("Futur")
+                            .foregroundColor(Color.white)
                             .font(.largeTitle)
                             .bold() +
                         Text("a")
@@ -28,14 +29,20 @@ struct destaques: View {
                     }
                     HStack {
                         Text("Investimentos")
+                            .foregroundColor(Color.white)
                             .font(.largeTitle)
                             .offset(y:-20)
                         Spacer()
                     }
+                    Rectangle()
+                        .frame(width: 350, height: 1)
+                        .offset(y:-20)
+                        .foregroundColor(Color.white)
                     VStack{
                         HStack{
                             NavigationLink(destination: Menu()){
                                 Text("Go Back")
+                                    .foregroundColor(Color.white)
                             }
                             Spacer()
                         }
@@ -44,35 +51,38 @@ struct destaques: View {
                                 Text("Nvidia Exemplo")
                                     .font(.largeTitle)
                                     .bold()
+                                    .foregroundColor(Color.white)
                                 ZStack{
                                     Rectangle()
                                         .frame(width: 300, height: 200)
-                                        .foregroundColor(Color.gray)
-                                    Text("Grafico da Acao")
+                                        .foregroundColor(Color.white)
+                                    Text("Grafico da Bolsa")
+                                        .font(.largeTitle)
                                         .bold()
+                                        .foregroundColor(Color.black)
                                 }
-                                Text("Lorem Ipsum dolor sit amet")
-                                Spacer()
                             }
                             VStack{
                                 Text("Petr4 Exemplo")
                                     .font(.largeTitle)
                                     .bold()
+                                    .foregroundColor(Color.white)
                                 ZStack{
                                     Rectangle()
                                         .frame(width: 300, height: 200)
-                                        .foregroundColor(Color.gray)
-                                    Text("Grafico da Acao")
+                                        .foregroundColor(Color.white)
+                                    Text("Grafico da Bolsa")
+                                        .font(.largeTitle)
                                         .bold()
+                                        .foregroundColor(Color.black)
                                 }
-                                Text("Lorem Ipsum dolor sit amet")
                             }
                         }
                     }
                 }
             }
                 .padding()
-        Spacer()
+                .background(Color("Gray3"))
         }.navigationBarBackButtonHidden(true)
     }
 }

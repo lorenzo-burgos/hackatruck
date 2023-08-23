@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct Investimentos: View {
+    @State var acaoSeguir: String = ""
     var body: some View {
         NavigationStack{
             ZStack{
@@ -15,6 +16,7 @@ struct Investimentos: View {
                     HStack{
                         Text("Futur")
                             .font(.largeTitle)
+                            .foregroundColor(Color.white)
                             .bold() +
                         Text("a")
                             .bold()
@@ -29,21 +31,35 @@ struct Investimentos: View {
                     HStack {
                         Text("Investimentos")
                             .font(.largeTitle)
+                            .foregroundColor(Color.white)
                             .offset(y:-20)
                         Spacer()
                     }
+                    Rectangle()
+                        .frame(width: 350, height: 1)
+                        .offset(y:-20)
+                        .foregroundColor(Color.white)
+                    Spacer()
                     VStack{
                         HStack{
                             NavigationLink(destination: Menu()){
                                 Text("Go Back")
+                                    .foregroundColor(Color.white)
+                                Spacer()
                             }
-                            Spacer()
                         }
+                        VStack {
+                            TextField("digite seus investimentos", text: $acaoSeguir)
+                                .padding()
+                                .textFieldStyle(RoundedBorderTextFieldStyle())
+                        }
+                        Spacer()
+
                     }
                 }
             }
-                .padding()
-        Spacer()
+            .padding()
+            .background(Color("Gray3"))
         }.navigationBarBackButtonHidden(true)
     }
 }

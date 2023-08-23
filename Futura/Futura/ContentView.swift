@@ -16,10 +16,12 @@ struct ContentView: View {
         
         NavigationStack{
             ZStack {
+                
                 VStack {
                     HStack {
                         Text("Futur")
                             .font(.largeTitle)
+                            .foregroundColor(Color.white)
                             .bold() +
                             Text("a")
                             .bold()
@@ -33,10 +35,15 @@ struct ContentView: View {
                     }
                     HStack {
                         Text("Investimentos")
+                            .foregroundColor(Color.white)
                             .font(.largeTitle)
                             .offset(y:-20)
                         Spacer()
                     }
+                    Rectangle()
+                        .frame(width: 350, height: 1)
+                        .offset(y:-20)
+                        .foregroundColor(Color.white)
                     Spacer()
                     VStack {
                         TextField("email@email.com", text: $email)
@@ -57,6 +64,8 @@ struct ContentView: View {
                 }
             }
             .padding()
+            .background(Color("Gray3"))
+
         }.navigationBarBackButtonHidden(true)
     }
 }

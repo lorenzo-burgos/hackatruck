@@ -69,10 +69,10 @@
 				FCA5DA692A95696900FE8FD5 /* destaques.swift */,
 				FCA5DA6D2A957C5E00FE8FD5 /* Bolsa.swift */,
 				FCA5DA512A902D6A00FE8FD5 /* ContentView.swift */,
+				FCA5DA6F2A957F1800FE8FD5 /* Acao.swift */,
 				FCA5DA5D2A941A5100FE8FD5 /* Menu.swift */,
 				FCA5DA532A902D6C00FE8FD5 /* Assets.xcassets */,
 				FCA5DA552A902D6C00FE8FD5 /* Preview Content */,
-				FCA5DA6F2A957F1800FE8FD5 /* Acao.swift */,
 			);
 			path = Futura;
 			sourceTree = "<group>";
