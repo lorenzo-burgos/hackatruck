@@ -15,6 +15,8 @@
 		FCA5DA602A942A8000FE8FD5 /* Explorar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA5DA5F2A942A8000FE8FD5 /* Explorar.swift */; };
 		FCA5DA6A2A95696900FE8FD5 /* destaques.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA5DA692A95696900FE8FD5 /* destaques.swift */; };
 		FCA5DA6C2A956AEB00FE8FD5 /* Investimentos.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA5DA6B2A956AEB00FE8FD5 /* Investimentos.swift */; };
+		FCA5DA6E2A957C5E00FE8FD5 /* Bolsa.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA5DA6D2A957C5E00FE8FD5 /* Bolsa.swift */; };
+		FCA5DA702A957F1800FE8FD5 /* Acao.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA5DA6F2A957F1800FE8FD5 /* Acao.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		FCA5DA5F2A942A8000FE8FD5 /* Explorar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Explorar.swift; sourceTree = "<group>"; };
 		FCA5DA692A95696900FE8FD5 /* destaques.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = destaques.swift; sourceTree = "<group>"; };
 		FCA5DA6B2A956AEB00FE8FD5 /* Investimentos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Investimentos.swift; sourceTree = "<group>"; };
+		FCA5DA6D2A957C5E00FE8FD5 /* Bolsa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bolsa.swift; sourceTree = "<group>"; };
+		FCA5DA6F2A957F1800FE8FD5 /* Acao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Acao.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,10 +67,12 @@
 				FCA5DA5F2A942A8000FE8FD5 /* Explorar.swift */,
 				FCA5DA6B2A956AEB00FE8FD5 /* Investimentos.swift */,
 				FCA5DA692A95696900FE8FD5 /* destaques.swift */,
+				FCA5DA6D2A957C5E00FE8FD5 /* Bolsa.swift */,
 				FCA5DA512A902D6A00FE8FD5 /* ContentView.swift */,
 				FCA5DA5D2A941A5100FE8FD5 /* Menu.swift */,
 				FCA5DA532A902D6C00FE8FD5 /* Assets.xcassets */,
 				FCA5DA552A902D6C00FE8FD5 /* Preview Content */,
+				FCA5DA6F2A957F1800FE8FD5 /* Acao.swift */,
 			);
 			path = Futura;
 			sourceTree = "<group>";
@@ -150,9 +156,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCA5DA6C2A956AEB00FE8FD5 /* Investimentos.swift in Sources */,
+				FCA5DA702A957F1800FE8FD5 /* Acao.swift in Sources */,
 				FCA5DA5E2A941A5100FE8FD5 /* Menu.swift in Sources */,
 				FCA5DA522A902D6A00FE8FD5 /* ContentView.swift in Sources */,
 				FCA5DA602A942A8000FE8FD5 /* Explorar.swift in Sources */,
+				FCA5DA6E2A957C5E00FE8FD5 /* Bolsa.swift in Sources */,
 				FCA5DA502A902D6A00FE8FD5 /* FuturaApp.swift in Sources */,
 				FCA5DA6A2A95696900FE8FD5 /* destaques.swift in Sources */,
 			);

@@ -1,5 +1,5 @@
 //
-//  destaques.swift
+//  Bolsa.swift
 //  Futura
 //
 //  Created by Student16 on 22/08/23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct destaques: View {
+struct Bolsa: View {
     var body: some View {
         NavigationStack{
             ZStack{
@@ -39,33 +39,28 @@ struct destaques: View {
                             }
                             Spacer()
                         }
+                        Text("Bovespa Exemplo")
+                            .font(.largeTitle)
+                            .bold()
+                        ZStack{
+                            Rectangle()
+                                .frame(width: 300, height: 200)
+                                .foregroundColor(Color.gray)
+                            Text("Grafico da Bolsa")
+                                .bold()
+                        }
                         ScrollView{
-                            VStack{
-                                Text("Nvidia Exemplo")
-                                    .font(.largeTitle)
-                                    .bold()
-                                ZStack{
-                                    Rectangle()
-                                        .frame(width: 300, height: 200)
-                                        .foregroundColor(Color.gray)
-                                    Text("Grafico da Acao")
-                                        .bold()
-                                }
-                                Text("Lorem Ipsum dolor sit amet")
-                                Spacer()
-                            }
-                            VStack{
+                            NavigationLink(destination: Acao()){
                                 Text("Petr4 Exemplo")
                                     .font(.largeTitle)
                                     .bold()
-                                ZStack{
-                                    Rectangle()
-                                        .frame(width: 300, height: 200)
-                                        .foregroundColor(Color.gray)
-                                    Text("Grafico da Acao")
-                                        .bold()
-                                }
-                                Text("Lorem Ipsum dolor sit amet")
+                                    .foregroundColor(Color.black)
+                            }
+                            NavigationLink(destination: Acao()){
+                                Text("Vale4 Exemplo")
+                                    .font(.largeTitle)
+                                    .bold()
+                                    .foregroundColor(Color.black)
                             }
                         }
                     }
@@ -77,8 +72,8 @@ struct destaques: View {
     }
 }
 
-struct destaques_Previews: PreviewProvider {
+struct Bolsa_Previews: PreviewProvider {
     static var previews: some View {
-        destaques()
+        Bolsa()
     }
 }

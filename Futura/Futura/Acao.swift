@@ -1,5 +1,5 @@
 //
-//  destaques.swift
+//  Acao.swift
 //  Futura
 //
 //  Created by Student16 on 22/08/23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct destaques: View {
+struct Acao: View {
     var body: some View {
         NavigationStack{
             ZStack{
@@ -40,35 +40,22 @@ struct destaques: View {
                             Spacer()
                         }
                         ScrollView{
-                            VStack{
-                                Text("Nvidia Exemplo")
-                                    .font(.largeTitle)
+                            Text("Petr4 Exemplo")
+                                .font(.largeTitle)
+                                .bold()
+                            ZStack{
+                                Rectangle()
+                                    .frame(width: 300, height: 200)
+                                    .foregroundColor(Color.gray)
+                                Text("Grafico da Acao")
                                     .bold()
-                                ZStack{
-                                    Rectangle()
-                                        .frame(width: 300, height: 200)
-                                        .foregroundColor(Color.gray)
-                                    Text("Grafico da Acao")
-                                        .bold()
-                                }
-                                Text("Lorem Ipsum dolor sit amet")
-                                Spacer()
                             }
-                            VStack{
-                                Text("Petr4 Exemplo")
-                                    .font(.largeTitle)
-                                    .bold()
-                                ZStack{
-                                    Rectangle()
-                                        .frame(width: 300, height: 200)
-                                        .foregroundColor(Color.gray)
-                                    Text("Grafico da Acao")
-                                        .bold()
-                                }
-                                Text("Lorem Ipsum dolor sit amet")
-                            }
+                            Text("Porque Investir")
+                                .font(.largeTitle)
+                                .bold()
+                            Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris non efficitur neque, sit amet scelerisque odio. Praesent egestas metus posuere augue dictum, fermentum tristique orci ultricies. Phasellus tempus ligula in urna interdum sollicitudin quis ut libero. Donec ornare est ultrices rhoncus mollis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas dolor eros, efficitur eu risus eget, molestie egestas sem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Morbi purus lectus, porttitor vel sagittis dignissim, laoreet id ipsum. ")
                         }
-                    }
+                        }
                 }
             }
                 .padding()
@@ -77,8 +64,8 @@ struct destaques: View {
     }
 }
 
-struct destaques_Previews: PreviewProvider {
+struct Acao_Previews: PreviewProvider {
     static var previews: some View {
-        destaques()
+        Acao()
     }
 }

@@ -39,6 +39,14 @@ struct Explorar: View {
                             Spacer()
                         }
                         Spacer()
+                        ScrollView{
+                            NavigationLink(destination: Bolsa()){
+                                Text("Bovespa Exemplo")
+                                    .font(.largeTitle)
+                                    .bold()
+                                    .foregroundColor(Color.black)
+                            }
+                        }
                     }
                 }
             }
